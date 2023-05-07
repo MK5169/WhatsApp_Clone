@@ -10,11 +10,14 @@ class WelcomeScreen extends StatelessWidget {
         body: Column(
           children: [
             Expanded(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 50),
-                child: Image.asset(
-                  "assets/images/circle.png",
-                  color: const Color(0xff00a884),
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 50),
+                  child: Image.asset(
+                    "assets/images/circle.png",
+                    color: const Color(0xff00a884),
+                  ),
                 ),
               ),
             ),
@@ -102,7 +105,12 @@ class WelcomeScreen extends StatelessWidget {
                           SizedBox(
                             width: 10,
                           ),
-                          Text('English'),
+                          Text(
+                            'English',
+                            style: TextStyle(
+                              color: Color(0xff00a884),
+                            ),
+                          ),
                           SizedBox(
                             width: 10,
                           ),
